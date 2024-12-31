@@ -1,7 +1,7 @@
 public class MonsterGoblin extends Person {
 
     public MonsterGoblin(String name) {
-        super(name, String.valueOf(MonsterType.GOBLIN), 80, 20, 15, 20, VoiceOfPerson.GROWL);
+        super(name, String.valueOf(MonsterType.GOBLIN), 80, 20, 15, 20, 50, VoiceOfPerson.GROWL);
     }
 
     @Override

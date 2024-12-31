@@ -1,6 +1,6 @@
 public class MonsterSkeleton extends Person {
     public MonsterSkeleton(String name) {
-        super(name, String.valueOf(MonsterType.SKELETON), 120, 50, 10, 30, VoiceOfPerson.MOAN);
+        super(name, String.valueOf(MonsterType.SKELETON), 120, 50, 10, 10, 30, VoiceOfPerson.MOAN);
     }
 
     @Override

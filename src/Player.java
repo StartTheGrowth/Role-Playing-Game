@@ -1,7 +1,7 @@
 public class Player extends Person {
 
     public Player(String name) {
-        super(name, "Player", 100, 20, 20, 500, VoiceOfPerson.VOICE_OF_PLAYER);
+        super(name, "Player", 100, 20, 20, 30, 500, VoiceOfPerson.VOICE_OF_PLAYER);
     }
 
     @Override

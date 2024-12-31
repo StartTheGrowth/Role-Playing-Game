@@ -5,15 +5,17 @@ public class Person {
     private int strength;
     private int dexterity;
     private int impactForce;
+    private int exp;
     private int gold;
     private VoiceOfPerson voiceOfPerson;
 
-    public Person(String name, String type, int life, int strength, int dexterity, int gold, VoiceOfPerson voiceOfPerson) {
+    public Person(String name, String type, int life, int strength, int dexterity, int exp, int gold, VoiceOfPerson voiceOfPerson) {
         this.name = name;
         this.type = type;
         this.life = life;
         this.strength = strength;
         this.dexterity = dexterity;
+        this.exp = exp;
         this.gold = gold;
         this.voiceOfPerson = voiceOfPerson;
         this.impactForce = strength + dexterity;
@@ -65,6 +67,14 @@ public class Person {
 
     public void setImpactForce() {
         this.impactForce = impactForce;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
     }
 
     public int getGold() {
