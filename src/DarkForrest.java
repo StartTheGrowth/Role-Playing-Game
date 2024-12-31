@@ -7,10 +7,10 @@ public class DarkForrest {
     MonsterGoblin monsterGoblin;
     MonsterSkeleton monsterSkeleton;
 
-    public DarkForrest(Player player, MonsterGoblin monsterGoblin, MonsterSkeleton monsterSkeleton) {
+    public DarkForrest(Player player/*, MonsterGoblin monsterGoblin, MonsterSkeleton monsterSkeleton*/) {
         this.player = player;
-        this.monsterGoblin = monsterGoblin;
-        this.monsterSkeleton = monsterSkeleton;
+        this.monsterGoblin = new MonsterGoblin();
+        this.monsterSkeleton = new MonsterSkeleton();
     }
 
     Random random = new Random();
@@ -24,7 +24,8 @@ public class DarkForrest {
             sleep(500);
             int rnd = random.nextInt(29) + 1;
             if (rnd % 5 == 0) {
-                System.out.println("\n" + "На твоём пути противник " + monsterGoblin.toString());
+                System.out.println("\n" + "На твоём пути противник " + monsterGoblin.toString() + ".\n" +
+                        " Для нанесения удара нажми клавишу 1");
                 Battle battle = new Battle(monsterGoblin, monsterSkeleton, player);
                 battle.battle();
                 break;

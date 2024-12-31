@@ -1,7 +1,6 @@
 public class MonsterGoblin extends Person {
-
-    public MonsterGoblin(String name) {
-        super(name, String.valueOf(MonsterType.GOBLIN), 80, 20, 15, 20, 50, VoiceOfPerson.GROWL);
+    public MonsterGoblin() {
+        super("HellBoy", String.valueOf(MonsterType.GOBLIN), 80, 20, 15, 20, 50, VoiceOfPerson.GROWL);
     }
 
     @Override
@@ -12,6 +11,6 @@ public class MonsterGoblin extends Person {
 
     @Override
     public String toString() {
-        return "MonsterGoblin " + getType() + " уровень жизни" + getLife();
+        return getType() + " " + getName() + " уровень жизни " + getLife();
     }
 }

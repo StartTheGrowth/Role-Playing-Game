@@ -13,9 +13,9 @@ public class StartGame {
         System.out.println("Как твоё имя?");
         name = scanner.nextLine();
         this.player = new Player(name);
-        this.monsterSkeleton = new MonsterSkeleton("BoneMan");
-        this.monsterGoblin = new MonsterGoblin("HellBoy");
-        this.darkForrest = new DarkForrest(player, monsterGoblin, monsterSkeleton);
+        this.monsterSkeleton = new MonsterSkeleton();
+        this.monsterGoblin = new MonsterGoblin();
+        this.darkForrest = new DarkForrest(player);
         this.dealer = new Dealer(player);
         choosingPath();
     }

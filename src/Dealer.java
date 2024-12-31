@@ -2,7 +2,7 @@ import static java.lang.Thread.sleep;
 
 public class Dealer {
     Player player;
-
+    StartGame startGame;
     public Dealer(Player player) {
         this.player = player;
     }
@@ -16,5 +16,6 @@ public class Dealer {
         System.out.println("Моё имя " + player.getName() + ". Что ты продаешь?");
         sleep(2000);
         System.out.println("Прости, мой друг, торговец в отпуске!!!");
+        this.startGame = new StartGame();
     }
 }

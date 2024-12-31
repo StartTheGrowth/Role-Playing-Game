@@ -1,6 +1,6 @@
 public class MonsterSkeleton extends Person {
-    public MonsterSkeleton(String name) {
-        super(name, String.valueOf(MonsterType.SKELETON), 120, 50, 10, 10, 30, VoiceOfPerson.MOAN);
+    public MonsterSkeleton() {
+        super("BoneMan", String.valueOf(MonsterType.SKELETON), 120, 50, 10, 10, 30, VoiceOfPerson.MOAN);
     }
 
     @Override
@@ -10,6 +10,6 @@ public class MonsterSkeleton extends Person {
 
     @Override
     public String toString() {
-        return "MonsterSkeleton" + getType() + " уровень жизни " + getLife();
+        return getType() + " " + getName() + " уровень жизни " + getLife();
     }
 }
