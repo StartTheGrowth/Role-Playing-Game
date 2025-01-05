@@ -1,5 +1,5 @@
 public enum VoiceOfPerson {
-    SCREAM("AAAAAA!!!"),
+    SCREAM("AAAAAA!!! "),
     GROWL("RGHAAA!!!"),
     VOICE_OF_PLAYER("Получи, гад!!!"),
     MOAN("OOOOOHHH");

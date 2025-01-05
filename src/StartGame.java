@@ -13,8 +13,8 @@ public class StartGame {
         System.out.println("Как твоё имя?");
         name = scanner.nextLine();
         this.player = new Player(name);
-        this.monsterSkeleton = new MonsterSkeleton();
-        this.monsterGoblin = new MonsterGoblin();
+        this.monsterSkeleton = new MonsterSkeleton(player);
+        this.monsterGoblin = new MonsterGoblin(player);
         this.darkForrest = new DarkForrest(player);
         this.dealer = new Dealer(player);
         choosingPath();
