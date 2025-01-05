@@ -24,7 +24,7 @@ public class MonsterSkeleton extends Person implements Hit {
 
     @Override
     public void voice() {
-        System.out.print(getVoiceOfPerson().MOAN.getTitle());
+        System.out.println(getVoiceOfPerson().MOAN.getTitle());
     }
 
     @Override
